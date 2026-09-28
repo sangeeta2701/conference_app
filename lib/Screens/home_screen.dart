@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:video_conference_app/Constants/appColors.dart';
 import 'package:video_conference_app/Constants/appTextStyle.dart';
 import 'package:video_conference_app/Constants/sizedBox.dart';
+import 'package:video_conference_app/Screens/joinWithCode_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -34,12 +36,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 icon: Icon(Icons.add, color: white),
               ),
-              height20,
-              Padding(
-                padding:  EdgeInsets.symmetric(horizontal: 20.w),
-                child: Divider(color: grey),
-              ),
-              height20,
+              Divider(color: grey, height: 40.h, indent: 40.w, endIndent: 40.w,),
               ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: white,
@@ -48,7 +45,9 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadiusGeometry.circular(20.r),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                Get.to(JoinWithCodeScreen());
+                },
                 label: Padding(
                   padding:  EdgeInsets.symmetric(horizontal: 20.w),
                   child: Text(
@@ -56,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                     style: themeButtonTextStyle.copyWith(fontSize: 14.sp),
                   ),
                 ),
-                icon: Icon(Icons.pin),
+                icon: Icon(Icons.margin),
               ),
               height30,
               Image.asset("assets/images/bg.jpg", fit: BoxFit.cover),

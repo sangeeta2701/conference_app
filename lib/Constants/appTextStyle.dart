@@ -5,14 +5,16 @@ import 'package:video_conference_app/Constants/appColors.dart';
 
 final whiteButtonTextStyle = GoogleFonts.poppins(
   color: white,
-  fontSize: 16.sp,
+ 
   fontWeight: FontWeight.w600
 );
 
 
 final themeButtonTextStyle = GoogleFonts.poppins(
   color: themeColor,
-  fontSize: 16.sp,
+ 
   fontWeight: FontWeight.w600
 );
+
+final blackContentHeadingStyle = GoogleFonts.poppins(fontSize: 15.sp, color: black, fontWeight: FontWeight.bold);
 
