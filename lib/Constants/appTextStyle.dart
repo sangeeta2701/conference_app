@@ -17,4 +17,6 @@ final themeButtonTextStyle = GoogleFonts.poppins(
 );
 
 final blackContentHeadingStyle = GoogleFonts.poppins(fontSize: 15.sp, color: black, fontWeight: FontWeight.bold);
+final blackContentStyle = GoogleFonts.poppins(fontSize: 12.sp, color: black, fontWeight: FontWeight.w300);
+
 

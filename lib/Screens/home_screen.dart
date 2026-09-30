@@ -5,6 +5,7 @@ import 'package:video_conference_app/Constants/appColors.dart';
 import 'package:video_conference_app/Constants/appTextStyle.dart';
 import 'package:video_conference_app/Constants/sizedBox.dart';
 import 'package:video_conference_app/Screens/joinWithCode_screen.dart';
+import 'package:video_conference_app/Screens/newMeeting_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -26,7 +27,9 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadiusGeometry.circular(20.r),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(NewMeetingScreen());
+                },
                 label: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20.w),
                   child: Text(
